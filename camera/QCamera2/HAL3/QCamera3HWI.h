@@ -482,7 +482,9 @@ private:
     QCamera3SupportChannel *mAnalysisChannel;
     QCamera3RawDumpChannel *mRawDumpChannel;
     QCamera3RegularChannel *mDummyBatchChannel;
+#if 0
     QCamera3DepthChannel *mDepthChannel;
+#endif
     QCameraPerfLockMgr mPerfLockMgr;
     QCameraThermalAdapter &m_thermalAdapter;
     QCameraFOVControl *m_pFovControl;
