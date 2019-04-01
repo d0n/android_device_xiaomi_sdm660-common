@@ -940,9 +940,9 @@ typedef struct {
     /* common between HAL1 and HAL3 */
     INCLUDE(CAM_INTF_META_HISTOGRAM,                    cam_hist_stats_t,               1);
     INCLUDE(CAM_INTF_META_FACE_DETECTION,               cam_face_detection_data_t,      1);
-    INCLUDE(CAM_INTF_META_FACE_RECOG,                   cam_face_recog_data_t,          1);
-    INCLUDE(CAM_INTF_META_FACE_BLINK,                   cam_face_blink_data_t,          1);
     INCLUDE(CAM_INTF_META_FACE_GAZE,                    cam_face_gaze_data_t,           1);
+    INCLUDE(CAM_INTF_META_FACE_BLINK,                   cam_face_blink_data_t,          1);
+    INCLUDE(CAM_INTF_META_FACE_RECOG,                   cam_face_recog_data_t,          1);
     INCLUDE(CAM_INTF_META_FACE_SMILE,                   cam_face_smile_data_t,          1);
     INCLUDE(CAM_INTF_META_FACE_LANDMARK,                cam_face_landmarks_data_t,      1);
     INCLUDE(CAM_INTF_META_FACE_CONTOUR,                 cam_face_contour_data_t,        1);
@@ -1201,6 +1201,12 @@ typedef struct {
     INCLUDE(CAM_INTF_PARAM_BOKEH_BLUR_LEVEL,            cam_rtb_blur_info_t,         1);
     INCLUDE(CAM_INTF_META_RTB_DATA,                     cam_rtb_msg_type_t,          1);
     INCLUDE(CAM_INTF_META_DC_CAPTURE,                   uint8_t,                     1);
+
+    /* Xiaomi */
+    INCLUDE(XIAOMI_PROPRIETARY_ONE, 			uint32_t,		     1);
+    INCLUDE(XIAOMI_PROPRIETARY_TWO, 			uint32_t,			1);
+    INCLUDE(XIAOMI_PROPRIETARY_THREE, 			uint32_t,			1);
+    INCLUDE(XIAOMI_PROPRIETARY_FOUR, 			uint8_t,			1);
 } metadata_data_t;
 
 /* Update clear_metadata_buffer() function when a new is_xxx_valid is added to

@@ -2420,12 +2420,12 @@ typedef enum {
     CAM_INTF_PARM_MANUAL_CAPTURE_TYPE,
     /*AF state change detected by AF module*/
     CAM_INTF_AF_STATE_TRANSITION,
-    /* face recognition */
-    CAM_INTF_META_FACE_RECOG,
-    /* face blink detection */
-    CAM_INTF_META_FACE_BLINK,
     /* face gaze detection */
     CAM_INTF_META_FACE_GAZE,
+    /* face blink detection */
+    CAM_INTF_META_FACE_BLINK,
+    /* face recognition */
+    CAM_INTF_META_FACE_RECOG,
     /* face smile detection */
     CAM_INTF_META_FACE_SMILE,
     /* face landmark detection */
@@ -2501,6 +2501,12 @@ typedef enum {
     CAM_INTF_META_DC_CAPTURE,
     /* Enable/Disable AF fine scan */
     CAM_INTF_PARM_SKIP_FINE_SCAN,
+
+    XIAOMI_PROPRIETARY_ONE,
+    XIAOMI_PROPRIETARY_TWO,
+    XIAOMI_PROPRIETARY_THREE,
+    XIAOMI_PROPRIETARY_FOUR,
+
     CAM_INTF_PARM_MAX
 } cam_intf_parm_type_t;
 
