@@ -73,10 +73,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.camera.eis.enable=0 \
 	persist.camera.preview.ubwc=0 \
+	persist.vendor.camera.preview.ubwc=0 \
 	persist.vendor.qti.telephony.vt_cam_interface=1 \
 	vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,org.cyanogenmod.snap \
 	camera.hal1.packagelist=com.whatsapp,com.android.camera,com.android.camera2,com.instagram.android \
-	vendor.camera.hal1.packagelist= com.whatsapp,com.android.camera,com.android.camera2,com.instagram.android
+	vendor.camera.hal1.packagelist= com.whatsapp,com.android.camera,com.android.camera2,com.instagram.android \
+	persist.vendor.camera.sat.enable=1 \
+	persist.vendor.camera.instant.aec=1\
+	persist.vendor.camera.fovc.enable=1
 
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
