@@ -38,8 +38,8 @@ DEVICE_PACKAGE_OVERLAYS := device/xiaomi/sdm660-common/overlay
 $(call inherit-product, $(PLATFORM_PATH)/platform_prop.mk)
 
 # Android_filesystem_config
-PRODUCT_PACKAGES += \
-	fs_config_files
+#PRODUCT_PACKAGES += \
+#	fs_config_files
 
 # ANT+
 PRODUCT_PACKAGES += \
