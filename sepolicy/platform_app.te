@@ -1,0 +1,2 @@
+allow platform_app bluetooth_prop:file read;
+allow platform_app bluetooth_prop:file read;
